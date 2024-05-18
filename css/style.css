@@ -1,0 +1,53 @@
+/* Variavel para as cores */
+:root{
+
+    --fundo-menu-lateral:#04347c;
+    --fundo-claro: #f8df7a;
+
+    --fundo-escuro: #e49c24;
+
+    --textos-escuro: ;
+
+    --detalhes-claro: #bbd9c4;
+    --detalhes-escuro: #64a49c;
+}
+/* Mobile menu */
+
+
+/* CSS principal */
+body{
+    font-family:var() ;
+    color:var() ;
+    background:var() ;
+}
+a{
+    color:var() ;
+    text-decoration:none;
+}
+a:hover {
+    color: var();
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: ; /* nome das fontes */
+}
+/* cabeçalho */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background: var(--fundo-menu-lateral);
+    transition: all ease-in-out 0.5s;
+    padding: 0 15px;
+    z-index: 99999;
+    overflow-y: auto;
+}
+.perfil img{
+    margin: 15px auto;
+    display: block;
+    width: 190px;
+    border: 2px solid var();
+    box-shadow: 0px 0px 1px 5px;
+}
