@@ -222,7 +222,11 @@ white-space: nowrap;
 }
 @media  (max-width: 768px) {
     #hero h1 {
-        font-size: 30px;
+        font-size: 90px;
         line-height: 36px;
+        margin-bottom: 20px;
+    }
+    #hero h1 {
+        font-size: 24px;
     }
 }
