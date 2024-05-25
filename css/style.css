@@ -13,6 +13,7 @@
 
     --texto-escuro:#211660 ; 
     --texto-claro: #5472a1;
+    --texto-titulo:#201db9;
 
     --detalhes-claro: #d1e3d7;
     --detalhes-icones: #5472a1;
@@ -23,11 +24,11 @@
 /* CSS principal */
 body{
     font-family:"Unna", sans-serif ;
-    color:var(--texto-claro) ;
-    background:var(--fundo-escuro) ;
+    color:var(--fundo-menu-lateral) ; /* texto claro */
+    background:var(--detalhes-claro) ;
 }
 a{
-    color:var(--texto-claro) ;
+    color:var(--texto-claro) ; /* texto claro */
     text-decoration:none;
 }
 a:hover {
@@ -35,7 +36,7 @@ a:hover {
     text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family:"" ; /* nome das fontes */
+    font-family:"Unna" sans-serif ; /* nome das fontes */
 }
 /* cabeçalho */
 #header {
@@ -87,6 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 #main {
     margin-left: 300px;
 }
+.container,
 .container-fluid {
     padding-left: 30px;
     padding-right: 30px;
@@ -230,3 +232,89 @@ white-space: nowrap;
         font-size: 24px;
     }
 }
+/* ------- Css Geral -----  */
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+.section-bg {  /*bg - background*/
+    background: var(--fundo-claro);
+}
+.section-title{
+    padding-bottom: 30px;
+}
+.section-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px; /* alterei aqui */
+    padding-bottom: 20px;
+    color: var(--fundo-menu-lateral);
+}
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--fundo-escuro);
+}
+.section-title p {
+    margin-bottom: 0;
+}
+/* sobre */
+.sobre .container h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--detalhes-icones); 
+}
+.sobre .container ul{
+    list-style: none;
+    padding: 0;
+}
+.sobre .container ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.sobre .container ul strong {
+    margin-right: 15px;
+}
+.sobre .container ul i {
+    font-size: 22px;
+    margin-right: 10px;
+    color: var(--detalhes-icones);
+    line-height: 0;
+}
+/* conquistas */
+.conquistas {
+    padding-bottom: 30px;
+}
+.conquistas .count-box {
+    padding: 30px;
+    width: 100%;
+}
+.conquistas .count-box i {
+    display: block;
+    font-size: 45px;
+    color: var(--detalhes-escuro);
+    float: left;
+    line-height: 0;
+}
+.conquistas .count-box span {
+    font-size: 50px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    color: var(--texto-claro);
+    margin-left: 60px;
+}
+.conquistas .count-box p {
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: "Unna" serif;
+    font-size: 16px;
+    color: var(--detalhes-escuro);
+}
+/* .conquistas .count-box i:hover {
+    color: var(--fundo-escuro);
+} */
