@@ -134,20 +134,20 @@ white-space: nowrap;
 .nav-menu a:focus i{
     font-size: 24px;
     padding-right: 20px;
-    color: var(--fundo-claro);
+    color: var(--borda-clara);  /* alterei para teste  */
 }
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
     text-decoration: none;
-    color: var(--fundo-claro);
+    color: var(--borda-clara); /* alterei */
 }
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-    color: var(--detalhes-escuro);
+    color: var(--detalhes-icones);  /* alterei para teste */
 }
 /* fim header */
 .mobile-nav-toggle {
@@ -203,7 +203,7 @@ white-space: nowrap;
     font-size: 64px;
     font-size: 700;
     line-height: 56px;
-    color: var(--detalhes-icones);
+    color: var(--detalhes-icones);                              /* título Jessi's Arts */
 }
 #hero p {
     color: var(--detalhes-icones);
@@ -252,7 +252,7 @@ section {
 }
 .section-title h2::after {
     content: "";
-    position: absolute;
+    position: absolute; 
     display: block;
     width: 50px;
     height: 3px;
@@ -263,7 +263,7 @@ section {
 }
 /* sobre */
 .sobre .container h3 {
-    font-size: 30px;
+    font-size: 30px;          
     font-weight: 500;
     color: var(--detalhes-icones); 
 }
@@ -305,7 +305,7 @@ section {
     line-height: 40px;
     display: block;
     font-weight: 700;
-    color: var(--texto-claro);
+    color: var(--texto-titulo);
     margin-left: 60px;
 }
 .conquistas .count-box p {
@@ -318,3 +318,33 @@ section {
 /* .conquistas .count-box i:hover {
     color: var(--fundo-escuro);
 } */
+/* Skills / Vendas */
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Cormorant Garamond" sans-serif;
+    color: var(--detalhes-escuro);
+}
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+.skills .progress-bar-bg {
+    background: var(--borda-clara);
+    height: 10px;
+}
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 5s;
+    background: var(--detalhes-escuro);
+}
