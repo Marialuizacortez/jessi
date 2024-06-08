@@ -8,14 +8,14 @@
     --fundo-claro: #f8df7a;
     --fundo-escuro: #e49c24;
 
-    --borda-clara:#d1e3d7 ;
+    --borda-clara:#ffffff ; /* #d1e3d7 */
     --borda-escura:#64a49c ;
 
     --texto-escuro:#211660 ; 
     --texto-claro: #5472a1;
     --texto-titulo:#201db9;
 
-    --detalhes-claro: #d1e3d7;
+    --detalhes-claro: #ffffff;
     --detalhes-icones: #5472a1;
     --detalhes-escuro: #002ca6;
 }
