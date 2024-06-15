@@ -474,3 +474,47 @@ section {
     opacity: 1;
     bottom: 0;
 }
+/* portfolio página adicional == detalhes  */
+
+/** voltar **/
+.servicos .icon-box {
+    margin-bottom: 20px;
+}
+.servicos .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: var(--fundo-claro);
+    border-radius: 50%;
+    margin-right: 12px;
+    transition: 0.5s;
+    border: 2px solid var(--fundo-escuro);
+    box-shadow: 0 0 5px 0;
+}
+.servicos .icon i {
+    font-size: 28px;
+    color: var(--fundo-menu-lateral);
+    line-height: 0;
+}
+.servicos .icon:hover {
+    background: var(--detalhes-claro);
+    transition: 0.3s;
+}
+.servicos .icon:hover i {
+    color: var(--texto-claro);
+}
+.servicos .title {
+    margin-left: 80px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--detalhes-escuro);
+}
+.servicos .descricao {
+    margin-left: 60px;
+    line-height: 20px;
+    font-size: 18px;
+}
