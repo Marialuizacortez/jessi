@@ -516,7 +516,7 @@ section {
 .servicos .descricao {
     margin-left: 60px;
     line-height: 20px;
-    font-size: 18px;
+    font-size: 18px; 
 }
 /* depoimentos // feedbacks //avaliações */
 .depoimentos,
@@ -542,4 +542,55 @@ section {
     font-size: 14px;
     margin: 0;
     color: var(--detalhes-escuro);
+}
+.depoimentos .depoimento-item .quote-left,
+.depoimentos .depoimento-item .quote-right {
+    color:var(--texto-titulo);
+    font-size: 26px;
+}
+.depoimentos .depoimento-item .quote-left {
+    display: inline-block;
+    position: relative;
+    left: -10px;
+}
+.depoimentos .depoimento-item .quote-right {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    right: -5px;
+}
+.depoimentos .depoimento-item p {
+    font-style: italic;
+    color: var(--detalhes-icones);
+    margin: 0 15px 35px 15px;
+    padding: 20px;
+    background: var(--fundo-claro);
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px rgba(218, 221, 224, 0.219);
+}
+.depoimentos .depoimento-item p::after {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    left: calc(50% - 20px);
+    width: 0;
+    height: 0;
+    border-top: 20px solid var(--fundo-claro);
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+.depoimentos .swiper-pagination {
+    margin-top: 55px;
+    position: relative;
+}
+.depoimentos .swiper-pagination .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background: var(--detalhes-icones);
+   /*  opacity: 1;
+    border: 1px solid black; */
+}
+.depoimentos .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--detalhes-escuro);
 }
