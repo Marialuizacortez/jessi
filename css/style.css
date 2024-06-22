@@ -305,7 +305,7 @@ section {
     line-height: 40px;
     display: block;
     font-weight: 700;
-    color: var(--texto-titulo);
+    color: var(--detalhes-escuroim assunto); /* alterei 22/06 */
     margin-left: 60px;
 }
 .conquistas .count-box p {
