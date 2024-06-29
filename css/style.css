@@ -702,11 +702,12 @@ section {
     visibility: visible;
     opacity: 1;
 }
-/* Footer */
+
+/*Footer */
 #footer {
     padding: 30px;
     background: var(--fundo-menu-lateral);
-    color: var(--fundo-escuro);
+    color: var(--borda-clara);
     font-size: 16px;
     position: fixed; 
     left: 0;
@@ -721,10 +722,10 @@ section {
     padding-top: 5px;
     text-align: center;
     font-size: 16px;
-    color: var(--fundo-escuro);
+    color: var(--borda-clara);
 }
 #footer .creditos a {
-    color: var(--texto-claro);
+    color: var(--borda-clara);
 }
 @media (max-width: 1199px) {
     #footer {
